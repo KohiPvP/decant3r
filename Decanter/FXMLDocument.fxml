@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1035.0" prefWidth="1681.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="decanter.FXMLDocumentController">
+   <children>
+      <Pane id="pane_main" fx:id="pane_main" prefHeight="1035.0" prefWidth="1681.0" visible="false">
+         <children>
+            <Button id="btn_decant" fx:id="btn_decant" contentDisplay="BOTTOM" layoutX="707.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="106.0" prefWidth="327.0" text="Áttöltés">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane id="pane_popUp_green" fx:id="pane_popUp_green" layoutX="489.0" layoutY="303.0" prefHeight="331.0" prefWidth="574.0" visible="false">
+         <children>
+            <Rectangle id="rectangle_popUpTop_green" fx:id="rectangle_popUpTop_rectangle_popUpTop_green" arcHeight="5.0" arcWidth="5.0" fill="#1cff00" height="53.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="586.0" />
+            <Rectangle id="rectangle_popUpBottom" fx:id="rectangle_popUpBottom" arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1" height="290.0" layoutX="-6.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="586.0" />
+            <Rectangle id="rectangle_popUpTop_red" fx:id="rectangle_popUpTop_rectangle_popUpTop_red" arcHeight="5.0" arcWidth="5.0" fill="RED" height="53.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="586.0" />
+            <Label id="label_popUpTitle" fx:id="label_popUpTitle" layoutX="1.0" prefHeight="53.0" prefWidth="580.0" text=" Hiba">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button id="btn_popUp_Close_red" fx:id="btn_popUp_Close_red" layoutX="519.0" layoutY="1.0" mnemonicParsing="false" onAction="#PopUpClose" prefHeight="0.0" prefWidth="57.0" style="-fx-background-color: Red;" text="X" visible="false">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button id="btn_popUP_OK" fx:id="btn_popUP_OK" layoutX="266.0" layoutY="250.0" mnemonicParsing="false" onAction="#PopUpClose" text="OK" />
+            <Label id="label_PopUpMessage" fx:id="label_PopUpMessage" alignment="TOP_LEFT" layoutX="100.0" layoutY="95.0" prefHeight="118.0" prefWidth="380.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button id="btn_popUp_Close_green" fx:id="btn_popUp_Close_green" layoutX="520.0" mnemonicParsing="false" onAction="#PopUpClose" prefHeight="0.0" prefWidth="57.0" style="-fx-background-color: #1cff00;" text="X">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane id="pane_popUp_red" fx:id="pane_popUp_red" layoutX="499.0" layoutY="313.0" prefHeight="331.0" prefWidth="574.0">
+      </Pane>
+   </children>
+</AnchorPane>
